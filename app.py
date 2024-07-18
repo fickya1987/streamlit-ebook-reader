@@ -52,7 +52,7 @@ def display_story(story, col):
                 # Button to download the audio file
                 with open(audio_file, "rb") as file:
                     st.download_button(
-                        label="Download MP3",
+                        label="Download Audio",
                         data=file,
                         file_name=audio_file,
                         mime="audio/mpeg"
