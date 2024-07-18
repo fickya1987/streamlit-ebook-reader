@@ -106,7 +106,7 @@ stories = [
 ]
 
 # Set the title of the Streamlit app
-st.title("Fast AI Fiction")
+st.title("GRAB Merchant")
 
 # Custom CSS for responsive layout
 st.markdown("""
