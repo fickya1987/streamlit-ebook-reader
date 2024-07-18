@@ -43,7 +43,7 @@ def display_story(story, col):
             audio_file = f"audio_{story['id']}.mp3"
             
             # Button to generate audio
-            if st.button("Generate Audio", key=f"audio_{story['id']}"):
+            if st.button("AI Audio Teller", key=f"audio_{story['id']}"):
                 with st.spinner('Generating audio...'):
                     text_to_speech(story['full_text'], audio_file, "alloy")
                 # Play the generated audio
