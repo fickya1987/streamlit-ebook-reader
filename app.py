@@ -37,7 +37,7 @@ def display_story(story, col):
         st.markdown(story['summary'])
         
         # Expandable section for the full story
-        with st.expander("Read Full Story"):
+        with st.expander("Click Detail"):
             # Display formatted full text of the story
             st.markdown(format_full_text(story['full_text']), unsafe_allow_html=True)
             audio_file = f"audio_{story['id']}.mp3"
@@ -71,8 +71,10 @@ stories = [
     {
         "id": "story1",
         "title": "Batik Tradisiku",
-        "summary": "Batik Tradisiku was founded by Siswaya in Bogor, Indonesia. Batik Tradisiku sell many variety of Batik Clothing",
-        "full_text": """The galaxy was at war. Starfleets clashed in the cold void, planets burned, and alliances crumbled. Amidst this chaos, Kira, a lowly mechanic on the barren moon of Kestris, found herself thrust into the heart of the conflict. She had always believed her life would be spent repairing starships and dreaming of adventure, but fate had other plans.\n\nOne fateful day, while scavenging for parts, Kira stumbled upon a crashed escape pod. Inside was a gravely injured alien who identified himself as Prince Thallan, heir to the Throne of Arion, a planet key to the balance of power in the galaxy. The prince carried a message of a greater threat—an ancient, malevolent force from beyond the stars, known as the Voidbringers, poised to conquer and consume all in their path.\n\nWith his dying breath, Prince Thallan entrusted Kira with a data crystal containing vital information that could unite the warring factions against the Voidbringers. Kira, never one to shirk from a challenge, vowed to honor the prince's last wish. She repaired a derelict starfighter, took the crystal, and embarked on a perilous journey.\n\nHer path was fraught with danger—she faced hostile patrols, treacherous smugglers, and the ever-looming threat of the Voidbringers. Along the way, she forged unlikely alliances with rebels, outlaws, and soldiers from enemy planets. Kira's courage and determination inspired those she met, and her mission quickly became a beacon of hope.\n\nIn the climactic battle, as the Voidbringers descended upon the galaxy, Kira's ragtag fleet, now united, launched a desperate defense. With the help of the data crystal, they discovered the Voidbringers' weakness and struck a decisive blow. The galaxy, though scarred by war, was saved.\n\nKira, the mechanic turned hero, had done the impossible. She had united the galaxy and defeated the greatest threat it had ever faced. The war ended, and peace, though fragile, began to bloom. Kira returned to Kestris, but her name would forever be remembered among the stars.""",
+        "summary": "Batik Tradisiku was founded by Siswaya in Bogor, Indonesia. Batik Tradisiku has sold various Batik Clothing.",
+        "full_text": """Mr. Siswaya has successfully grown his business, Batik Tradisiku, since 2008. Located at Jl. Jalak No.2, Tanah Sareal, Bogor 16161, Batik Tradisiku operates a workshop with a monthly production capacity of 100 hand-drawn batik pieces, 600 stamped batik units, and 5,000 printed fabrics. The business employs 20 dedicated workers. The primary raw materials required for production are cotton fabric, malam fabric, and batik dyes, sourced from Bogor, Jakarta, and Central Java.
+
+Batik Tradisiku generates a monthly revenue of approximately 100-200 million IDR. To double the current production capacity, Mr. Siswaya is seeking an investment of 400-500 million IDR. Potential investors who are interested in this promising business in Bogor can contact him at +62 81588xxxxxx or (0251)8374xxxx. Mr. Siswaya is offering a 50:50 profit-sharing scheme, with 50% of the profits going to the investor and 50% to Mr. Siswaya. The expected payback period for the investment is around 2 to 3 years.""",
         "image": "https://asset-2.tstatic.net/bogor/foto/bank/images/syamhudi-siswaya-58-pemilik-galeri-batik-bogor-tradisiku.jpg"
     },
     {
